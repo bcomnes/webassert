@@ -16,7 +16,8 @@
   },
   "scripts": {
     "test": "npm run build && tape test.cjs",
-    "build": "ascjs esm cjs"
+    "build": "ascjs esm cjs",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
