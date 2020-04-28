@@ -1,5 +1,3 @@
-module.exports = assert
-
 class AssertionError extends Error {}
 AssertionError.prototype.name = 'AssertionError'
 
@@ -9,7 +7,7 @@ AssertionError.prototype.name = 'AssertionError'
  * @param  {string=} m Optional assertion error message
  * @throws {AssertionError}
  */
-function assert (t, m) {
+export default function assert (t, m) {
   if (!t) {
     var err = new AssertionError(m)
     if (Error.captureStackTrace) Error.captureStackTrace(err, assert)

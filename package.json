@@ -1,18 +1,26 @@
 {
-  "name": "nanoassert",
-  "version": "2.0.0",
+  "name": "webassert",
+  "version": "3.0.0",
   "description": "Nanoscale assertion module",
-  "main": "index.js",
+  "type": "module",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "exports": {
+    "import": "esm/index.js",
+    "require": "cjs/index.js"
+  },
   "dependencies": {},
   "devDependencies": {
+    "ascjs": "^4.0.0",
     "tape": "^4.9.1"
   },
   "scripts": {
-    "test": "tape test.js"
+    "test": "npm run build && tape test.cjs",
+    "build": "ascjs esm cjs"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/emilbayes/nanoassert.git"
+    "url": "git+https://github.com/bcomnes/webassert.git"
   },
   "keywords": [
     "assert",
@@ -20,12 +28,13 @@
     "power-assert",
     "tiny",
     "nano",
-    "pico"
+    "pico",
+    "esm"
   ],
-  "author": "Emil Bay <github@tixz.dk>",
+  "author": "Bret Comnes <bcomnes@gmail.com> (https://bret.io)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/emilbayes/nanoassert/issues"
+    "url": "https://github.com/bcomnes/nanoassert/issues"
   },
-  "homepage": "https://github.com/emilbayes/nanoassert#readme"
+  "homepage": "https://github.com/bcomnes/nanoassert#readme"
 }
