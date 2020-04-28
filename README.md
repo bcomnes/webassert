@@ -1,13 +1,13 @@
-# `nanoassert`
+# `webassert`
 
-[![Build Status](https://travis-ci.org/emilbayes/nanoassert.svg?branch=master)](https://travis-ci.org/emilbayes/nanoassert)
+> Nanoscale assertion esm module
 
-> Nanoscale assertion module
+A fork of [webassert](https://ghub.io/webasset) porting it over to real-deal ESM.
 
 ## Usage
 
 ```js
-var assert = require('nanoassert')
+import assert from 'webassert'
 
 assert(a !== b, `${a} !== ${b}`)
 ```
@@ -24,14 +24,11 @@ assertion made like in the example above.
 
 ## Why
 
-I like to write public facing code very defensively, but have reservations about
+> I like to write public facing code very defensively, but have reservations about
 the size incurred by the `assert` module. I only use the top-level `assert`
 method anyway.
 
-## `nanoassert@^1.1.0`
-
-Docs for the previous version, which is used by many modules on npm, can be
-[found here](https://github.com/emilbayes/nanoassert/tree/v1.1.0)
+I liked nanoassert but wanted an ESM version of it.
 
 ## Install
 

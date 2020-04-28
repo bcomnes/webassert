@@ -1,4 +1,4 @@
-var assert = require('.')
+var assert = require('.').default
 var test = require('tape')
 
 test('test', function (t) {
