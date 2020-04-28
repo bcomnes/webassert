@@ -1,6 +1,6 @@
 {
   "name": "webassert",
-  "version": "3.0.0",
+  "version": "2.0.0",
   "description": "Nanoscale assertion module",
   "type": "module",
   "main": "cjs/index.js",
