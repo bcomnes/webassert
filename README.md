@@ -2,12 +2,12 @@
 
 > Nanoscale assertion esm module
 
-A fork of [webassert](https://ghub.io/webasset) porting it over to real-deal ESM.
+A fork of [nanoassert](https://ghub.io/nanoassert) porting it over to real-deal ESM.  Directly importable to browsers (also works in node).
 
 ## Usage
 
 ```js
-import assert from 'webassert'
+import assert from 'https://unpkg.com/webassert@^3?module'
 
 assert(a !== b, `${a} !== ${b}`)
 ```
